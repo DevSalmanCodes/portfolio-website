@@ -1513,6 +1513,30 @@ textarea.form-control {
 	width: 100%;
 	height: 350px;
 }
+.mokafati-project-cover {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #54236d, #6f3298);
+	img {
+		width: 112px;
+		height: 112px;
+		object-fit: contain;
+	}
+	&:focus-visible {
+		outline: 3px solid $primary !important;
+		outline-offset: 4px;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		&.zoom-effect {
+			transition: none;
+			&:hover {
+				transform: none;
+			}
+		}
+	}
+}
+
 .blog-entry{
 	position: relative;
 	@include media-breakpoint-up(md){
